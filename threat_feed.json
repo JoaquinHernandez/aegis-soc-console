@@ -1,0 +1,30 @@
+{
+  "ioc_blacklist": [
+    {
+      "ip": "185.220.101.5",
+      "threat_actor": "APT29 (Cozy Bear)",
+      "threat_type": "Tor Exit / C2 Beacon",
+      "confidence": "98%",
+      "mitre_id": "T1071.001"
+    },
+    {
+      "ip": "45.154.255.89",
+      "threat_actor": "Lazarus Group",
+      "threat_type": "Data Exfiltration Endpoint",
+      "confidence": "94%",
+      "mitre_id": "T1048"
+    },
+    {
+      "ip": "194.26.29.112",
+      "threat_actor": "FIN7",
+      "threat_type": "Ransomware Staging Infrastructure",
+      "confidence": "99%",
+      "mitre_id": "T1486"
+    }
+  ],
+  "monitored_endpoints": [
+    {"hostname": "PROD-DB-01", "ip": "10.0.4.15", "role": "Database Cluster"},
+    {"hostname": "AUTH-GATEWAY", "ip": "10.0.1.2", "role": "SSO / Identity Provider"},
+    {"hostname": "EDGE-ROUTER-PRIMARY", "ip": "192.168.1.1", "role": "Perimeter Gateway"}
+  ]
+}
