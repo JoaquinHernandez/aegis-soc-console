@@ -1,0 +1,6 @@
+{
+  "auto_containment": true,
+  "telemetry_stream_speed_seconds": 1.2,
+  "max_events_per_session": 5,
+  "log_output": "soc_audit_trail.log"
+}
